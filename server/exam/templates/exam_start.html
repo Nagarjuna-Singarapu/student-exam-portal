@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Start Exam</title></head>
+<body>
+  <h2>Start Exam</h2>
+  <form method="post">{% csrf_token %}
+    <label>Number of questions: <input type="number" name="num_questions" value="10" min="1" /></label>
+    <br/><br/>
+    <button type="submit">Start Exam</button>
+  </form>
+  <p><a href="{% url 'exam_logout' %}">Logout</a></p>
+</body>
+</html>

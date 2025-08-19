@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Exam Result</title></head>
+<body>
+  <h2>Exam Result</h2>
+  <p>Score: {{ attempt.score }} / {{ attempt.total_questions }}</p>
+  <p>Started: {{ attempt.started_at }}</p>
+  <p>Submitted: {{ attempt.submitted_at }}</p>
+  <p><a href="{% url 'exam_start' %}">Take another exam</a></p>
+</body>
+</html>
